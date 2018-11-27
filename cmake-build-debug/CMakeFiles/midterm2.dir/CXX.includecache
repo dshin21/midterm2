@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/Daniel Shin/Desktop/midterm2/main.cpp
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+cmath
+-
+numeric
+-
+myMap.hpp
+/cygdrive/c/Users/Daniel Shin/Desktop/midterm2/myMap.hpp
+
+/cygdrive/c/Users/Daniel Shin/Desktop/midterm2/myMap.hpp
+string
+-
+vector
+-
+utility
+-
+algorithm
+-
+iostream
+-
+
