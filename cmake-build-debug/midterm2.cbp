@@ -86,9 +86,6 @@
 		<Unit filename="/cygdrive/c/Users/Daniel Shin/Desktop/midterm2/myMap.hpp">
 			<Option target="midterm2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Daniel Shin/Desktop/midterm2/standardDeviation.hpp">
-			<Option target="midterm2"/>
-		</Unit>
 		<Unit filename="/cygdrive/c/Users/Daniel Shin/Desktop/midterm2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -19,22 +19,22 @@ class myMap {
 public:
     vector<pair<K, V>> my_vec;
 
-    void add(K k, V v) {
-        int index = exists(k);
+    void add(K key, V val) {
+        int index = exists(key);
         if (index == -1) {
-            my_vec.push_back(make_pair(k, v));
+            my_vec.push_back(make_pair(key, val));
             sort(my_vec.begin(), my_vec.end(), [](auto i, auto j) {
                 return i.first < j.first;
             });
         } else {
-            my_vec[index].second = v;
+            my_vec[index].second = val;
         }
     }
 
-    int exists(K k) {
+    int exists(K key) {
         int i = 0;
         for (auto pair:my_vec) {
-            if (pair.first == k) return i;
+            if (pair.first == key) return i;
             ++i;
         }
         return -1;

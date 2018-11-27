@@ -15,7 +15,7 @@ auto standardDeviation(InputIterator first, InputIterator last) {
     double sd = 0.0;
     int i = 0;
 
-    for (auto it = first; it != last; ++it, ++i)a[i] = it->second;
+    for (auto it = first; it != last; ++it, ++i)a[i] = *it;
     for (int i = 0; i < 10; ++i) sum += a[i];
     for (int i = 0; i < 10; ++i) sd += pow(a[i] - (sum / 10), 2);
 
@@ -33,7 +33,13 @@ int main() {
     cout << m;
     cout << "=====================================" << endl;
     cout << "3.d)" << endl;
-    cout << "Standard Deviation: " << standardDeviation(m.my_vec.begin(), m.my_vec.end()) << endl;
+
+    vector<int> temp;
+    for (auto &i : m.my_vec) {
+        temp.push_back(i.second);
+    }
+
+    cout << "Standard Deviation: " << standardDeviation(temp.begin(), temp.end()) << endl;
     cout << "=====================================" << endl;
     cout << "3.e)" << endl;
     cout << m[5].first << " : " << m[5].second << endl;
